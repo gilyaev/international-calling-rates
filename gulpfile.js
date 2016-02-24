@@ -5,7 +5,7 @@ var gulp = require('gulp'),
    rename = require('gulp-rename');
 
 gulp.task('js', function() {
-  return gulp.src(['js/bike.js', 'js/app.js'])
+  return gulp.src(['js/ui.js', 'js/bike.js', 'js/app.js'])
     .pipe(concat('app.js'))
     .pipe(gulp.dest('./build'))
     .pipe(rename('app.min.js'))
