@@ -3,16 +3,18 @@ Review current international rates
 
 ##Installation
 
-1. Install Node.JS and npm
+* Install Node.JS and npm
 ```
 # sudo apt-get update
 # sudo apt-get install nodejs
 # sudo apt-get install npm
 ```
 
-2. Build application
+* Build application
 ```
 # cd PATH_TO_REPO
 PATH_TO_REPO# sudo npm install
 PATH_TO_REPO# sudo gulp
-```   
+```
+
+> You can find the assembled application in app.tar.gz   
