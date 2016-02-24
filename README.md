@@ -17,4 +17,4 @@ PATH_TO_REPO# sudo npm install
 PATH_TO_REPO# sudo gulp
 ```
 
-> You can find the assembled application in app.tar.gz   
+> You can find the assembled application in the app.tar.gz file
