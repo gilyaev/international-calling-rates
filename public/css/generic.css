@@ -47,7 +47,7 @@ body {color:#585858; font-family: Arial; font-size: 12px}
 	width: 326px;
 	height: 40px;
 	margin-right: 20px;
-	background: url('/img/dropDown.png') no-repeat top left;
+	background: url('../img/dropDown.png') no-repeat top left;
 	position: relative;
 }
 
