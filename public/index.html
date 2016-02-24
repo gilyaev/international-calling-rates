@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>International Rates</title>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/build/generic.min.css" type="text/css">
+</head>
+<body>
+  <div id="wrapper">
+    <section id="content">
+        <div class="title">
+            <h1>International dialing rates from North America</h1>
+            <h3>Review current international rates</h3>
+            <div id="rates">
+              <form>
+                <div class="row">
+                  <div class="select-conteiner">
+                      <div id="select-holder" class="holded">Not Avaliable</div>
+                      <select><option value="all">All</option></select>
+                  </div>
+                  <div class="btn-container"><div class="btn search">Search</div></div>
+                </div>
+              </form>
+              <div class="info-block">
+                <div id="loader" class="hide"><img src="/img/loader.gif" /></div>
+                <div class="message hide"></div>
+                <div class="alphabet hide"></div>
+                <table width="100%" class="table hide">
+                  <thead>
+                    <tr>
+                      <th>Country</th>
+                      <th>Type</th>
+                      <th width="50%">Code</th>
+                      <th>Rate per minute</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+                <div class="alphabet hide"></div>
+              </div>
+            </div>
+        </div>
+    </section>
+  </div>
+  <script type="text/javascript" src="/build/app.min.js"></script>
+</body>
+</html>
