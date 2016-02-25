@@ -103,8 +103,9 @@
     JsonP.CallbackRegistry = {};
 
     JsonP.request = function (url, onSuccess, onError) {
-        var scriptOk = false;
-        var callbackName = 'cb' + String(Math.random()).slice(-6);
+        var scriptOk = false,
+            script = document.createElement('script'),
+            callbackName = 'cb' + String(Math.random()).slice(-6);
 
         url += ~url.indexOf('?') ? '&' : '?';
         url += 'callback=BikeJS.JsonP.CallbackRegistry.' + callbackName;
@@ -115,12 +116,12 @@
         };
 
         function checkCallback() {
+            script.parentElement.removeChild(script);
             if (scriptOk) return;
             delete JsonP.CallbackRegistry[callbackName];
             onError(url);
         }
 
-        var script = document.createElement('script');
         script.onreadystatechange = function () {
             if (this.readyState == 'complete' || this.readyState == 'loaded') {
                 this.onreadystatechange = null;
